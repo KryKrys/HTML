@@ -14,11 +14,12 @@
             }
 
             .div {
-                text-indent: 70px;
+                text-indent: 100px;
             }
 
             .font{
                 font-family: "Verdana";
+                size: 3px;
             }
         </style>
     </head>
@@ -27,13 +28,23 @@
         
 
         <p class="font"><font size="6px" color="#350a78"> Una forma guiada y simple de comprender los comandos<BR>básicos y necesarios para poder instalar Archlinux <BR> Esta guia abarca la instalacion sin una interfaz gráfica,</font></p>
-        <HR> <!-- Crea una linea horizontal en la pagina-->
-        <p class="font"><font style="text-shadow: 2px 2px rgba(181, 124, 245, 0.582);" size="6px" color="#876ab1">Teclado.</font></p>
-            <div> <!-- BR es un salto de linea-->
-                <p class="font"><font size="3px">Cuando querramos escribir dentro de la terminal inicial (tty2), debemos configurar<BR>el idioma del teclado de la terminal, esto sólo si nuestro teclado físico esta en español, si no <BR> no hay necesidad de configurar pues el teclado de la terminal ya esta en inglés</font></p>
-                
-                <p class="rectangle div" style="font-family: Courier New;"> $ loadkeys es </p>
+        <HR><BR> <!-- Crea una linea horizontal en la pagina-->
 
+            <!-- TECLADO -->
+            <div> <!-- BR es un salto de linea-->
+                <p class="font" style="text-indent: 70px;"><font style="text-shadow: 2px 2px rgba(181, 124, 245, 0.582);" size="6px" color="#876ab1">Teclado.</font></p>
+                <p class="font">Cuando querramos escribir dentro de la terminal inicial (tty2), debemos configurar<BR>el idioma del teclado de la terminal, esto sólo si nuestro teclado físico esta en español, si no <BR> no hay necesidad de configurar pues el teclado de la terminal ya esta en inglés</p>
+                <p class="rectangle div" style="font-family: Courier New;"> $ loadkeys es </p>
+                <p class="font" style="font-style: italic;">Este comando carga el teclado en español en la terminal, asi tendremos acceso a los carácteres especiales</p>
+            </div>
+
+            <!-- ARRANQUE -->
+            <br>
+            <div>
+                <p class="font" style="text-indent: 70px;"><font style="text-shadow: 2px 2px rgba(181, 124, 245, 0.582);" size="6px" color="#876ab1">Arranque.</font></p>
+                <p class="font"> Al entrar al mundo de la instalación de un sistema operativo como es Linux, podemos intentar y ser precavidos, <BR> al empezar instalando y configurándolo desde una VMB (Virtual Machine BOX), si este es su caso, este paso no <BR> deberá seguirlo pues si queremos verificar el arranque tendremos que interactuar con carpetas de la pc y al ser <BR> una virtual machine esto es imposible. Si no es su caso, el comando óptimo para esta operación es: </p>
+                <p class="rectangle div" style="font-family: Courier New;"> $ ls /sys/firmware/efi/efivars </p>
+                <p class="font"> </p>
             </div>
     </body>
 </html>
