@@ -1,4 +1,9 @@
 #encabezadito{
     text-align: center;
-    color: blue;
+    font-size: 24px;
+    border-style:double;
+    border-color:cornflowerblue;
+    border-radius:8px;
+    border-width: 8px;
+    background-color: cornflowerblue;
 }
